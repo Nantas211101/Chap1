@@ -22,6 +22,10 @@ void Game::run(){
 
 void Game::processEvents(){
     sf::Event event;
+    // while(mWindow.pollEvent(event)){
+    //     if(event.type == sf::Event::Closed)
+    //         mWindow.close();
+    // }
     while(mWindow.pollEvent(event)){
         switch(event.type){
             case sf::Event::KeyPressed:
@@ -38,17 +42,17 @@ void Game::processEvents(){
 }
 
 void Game::update(){
-    // sf::Vector2f movement(0.f, 0.f);
-    // if(mIsMoveUp)
-    //     movement.y -= 1.f;
-    // if(mIsMoveDown)
-    //     movement.y += 1.f;
-    // if(mIsMoveLeft)
-    //     movement.x -= 1.f;
-    // if(mIsMoveRight)
-    //     movement.x += 1.f;
+    sf::Vector2f movement(0.f, 0.f);
+    if(mIsMoveUp)
+        movement.y -= 1.f;
+    if(mIsMoveDown)
+        movement.y += 1.f;
+    if(mIsMoveLeft)
+        movement.x -= 1.f;
+    if(mIsMoveRight)
+        movement.x += 1.f;
 
-    // mPlayer.move(movement);
+    mPlayer.move(movement);
 }
 
 void Game::render(){
