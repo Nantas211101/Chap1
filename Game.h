@@ -9,7 +9,7 @@ class Game{
     // main function
     private:
         void            processEvents();
-        void            update();
+        void            update(sf::Time deltaTime);
         void            render();
 
     // addition function
