@@ -22,7 +22,8 @@ class Game{
     // Big variable
     private:
         sf::RenderWindow mWindow;
-        sf::CircleShape mPlayer;
+        sf::Texture mTexture;
+        sf::Sprite mPlayer;
 
     // Small variable
     private:
