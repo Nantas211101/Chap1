@@ -70,6 +70,7 @@ void Game::render(){
 
 
 
+
 // Additional function
 
 void Game::handlePlayerInput(sf::Keyboard::Key key, bool isPressed){
